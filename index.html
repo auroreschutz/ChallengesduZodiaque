@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges du Zodiaque</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid p-1">
+    <main class="test row mx-lg-5 my-1 mx-md-0 mx-xs-0">
+
+        <!-- Accordion -->
+        <div class="accordion d-lg-none" id="accordionMenu">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h1><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                          </svg> Challenges du Zodiaque</h1>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionMenu">
+                    <div class="accordion-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="etapes col-lg-7 col-md-12 col-xs-12 m-0">
+            <div id="board">
+                <!-- 12 cases -->
+                <div class="case" style="background-image: url();"><img src="img/aries.gif" class="case-image"
+                        alt="aries" style="max-width: 50px;">
+                    <div class="case-content" id="case1"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/taurus.gif" class="case-image"
+                        alt="taurus" style="max-width: 50px;">
+                    <div class="case-content" id="case2"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/gemini.gif" class="case-image"
+                        alt="gemini" style="max-width: 50px;">
+                    <div class="case-content" id="case3"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/cancer.gif" class="case-image"
+                        alt="cancer" style="max-width: 50px;">
+                    <div class="case-content" id="case4"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/leo.gif" class="case-image" alt="leo"
+                        style="max-width: 50px;">
+                    <div class="case-content" id="case5"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/virgo.gif" class="case-image"
+                        alt="virgo" style="max-width: 50px;">
+                    <div class="case-content" id="case6"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/libra.gif" class="case-image"
+                        alt="libra" style="max-width: 50px;">
+                    <div class="case-content" id="case7"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/scorpio.gif" class="case-image"
+                        alt="scorpio" style="max-width: 50px;">
+                    <div class="case-content" id="case8"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/sagittarius.gif" class="case-image"
+                        alt="sagittarius" style="max-width: 50px;">
+                    <div class="case-content" id="case9"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/capricorn.gif" class="case-image"
+                        alt="capricorn" style="max-width: 50px;">
+                    <div class="case-content" id="case10"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/aquarius.gif" class="case-image"
+                        alt="aquarius" style="max-width: 50px;">
+                    <div class="case-content" id="case11"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/pisces.gif" class="case-image"
+                        alt="pisces" style="max-width: 50px;">
+                    <div class="case-content" id="case12"></div>
+                </div>
+            </div>
+        </section>
+        <section class="stats col-lg-5 col-md-2 col-xs-2 m-0 mt-1 p-5">
+            <div class="container desktopview">
+                <h1 class="h1t sp-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                  </svg> Challenges du Zodiaque</h1>
+                
+                 
+                <div class="participants">
+                        <h2 class="mt-4"><a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            
+                            Participants <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                              </svg>
+                        </a></h2>
+                    
+                      <div class="collapse show" id="collapseExample">
+                        <div id="participants" class="userscadre"></div>
+                      </div>
+                </div>
+
+
+                <br>
+                <button class="m-3 btn active-button signupbutton">S'inscrire</button>
+                    <button class="m-3 btn inactive-button loginbutton">Se connecter</button>
+                <div id="signup" class="signupD">
+                    <h2 class="m-3">S'inscrire</h2>
+                    <form id="signup-form">
+                        <input class="m-1 sign" type="text" id="username" placeholder="Pseudo" required>
+                        <input class="m-1" type="file" id="pawn-image" accept="image/*" required>
+                        <button class="m-1 sign" type="submit">S'inscrire</button>
+                    </form>
+                </div>
+                    <div id="login" class="loginD">
+                    <h2 class="m-3">Se connecter</h2>
+                    <form id="login-form">
+                        <input class="m-1 sign" type="text" id="login-username" placeholder="Pseudo" required>
+                        <button class="m-1 sign" type="submit">Connexion</button>
+                    </form>
+                    <div id="current-user">
+                        <p>Tu es connecté sous : <span id="logged-in-user"></span></p>
+                    </div>
+                </div>
+               
+
+                <h2 class="m-3">Challenges</h2>
+                <div id="steps">
+                    <ol>
+                        <li><input type="checkbox" class="step" data-step="1"> <strong>Challenge 1 :</strong> <small
+                                class="desc">description challenge 1</small></li>
+                        <li><input type="checkbox" class="step" data-step="2"> <strong>Challenge 2 :</strong> <small
+                            class="desc">description challenge 2</small></li>
+                        <li><input type="checkbox" class="step" data-step="3"> <strong>Challenge 3 :</strong> <small
+                            class="desc">description challenge 3</small></li>
+                        <li><input type="checkbox" class="step" data-step="4"> <strong>Challenge 4 :</strong> <small
+                            class="desc">description challenge 4</small></li>
+                        <li><input type="checkbox" class="step" data-step="5"> <strong>Challenge 5 :</strong> <small
+                            class="desc">description challenge 5</small></li>
+                        <li><input type="checkbox" class="step" data-step="6"> <strong>Challenge 6 :</strong> <small
+                            class="desc">description challenge 6</small></li>
+                        <li><input type="checkbox" class="step" data-step="7"> <strong>Challenge 7 :</strong> <small
+                            class="desc">description challenge 7</small></li>
+                        <li><input type="checkbox" class="step" data-step="8"> <strong>Challenge 8 :</strong> <small
+                            class="desc">description challenge 8</small></li>
+                        <li><input type="checkbox" class="step" data-step="9"> <strong>Challenge 9 :</strong> <small
+                            class="desc">description challenge 9</small></li>
+                        <li><input type="checkbox" class="step" data-step="10"> <strong>Challenge 10 :</strong> <small
+                            class="desc">description challenge 10</small></li>
+                        <li><input type="checkbox" class="step" data-step="11"> <strong>Challenge 11 :</strong> <small
+                            class="desc">description challenge 11</small></li>
+                        <li><input type="checkbox" class="step" data-step="12"> <strong>Challenge 12 :</strong> <small
+                            class="desc">description challenge 12</small></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal" tabindex="-1" id="stats-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Stats</h5>
+                    <button type="button" class="btn-close close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="stats"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const signupbutton = document.querySelector('.signupbutton');
+          const loginbutton = document.querySelector('.loginbutton');
+          const signupD = document.querySelector('.signupD');
+          const loginD = document.querySelector('.loginD');
+    
+          function showSignUp() {
+            signupD.style.display = 'block';
+            loginD.style.display = 'none';
+            signupbutton.classList.add('active-button');
+            signupbutton.classList.remove('inactive-button');
+            loginbutton.classList.remove('active-button');
+            loginbutton.classList.add('inactive-button');
+          }
+    
+          function showLogIn() {
+            loginD.style.display = 'block';
+            signupD.style.display = 'none';
+            loginbutton.classList.add('active-button');
+            loginbutton.classList.remove('inactive-button');
+            signupbutton.classList.remove('active-button');
+            signupbutton.classList.add('inactive-button');
+          }
+    
+          signupbutton.addEventListener('click', showSignUp);
+          loginbutton.addEventListener('click', showLogIn);
+    
+          showSignUp();
+        });
+      </script>
+
+</body>
+
+</html>
